@@ -1,3 +1,9 @@
+pub mod app;
+pub mod pages;
+
+use leptos::*;
+use app::App;
+
 fn main() {
-    println!("Hello, world!");
+    mount_to_body(|cx| view! {cx, <App />});
 }
